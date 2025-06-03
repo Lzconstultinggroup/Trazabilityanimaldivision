@@ -1,0 +1,70 @@
+/* src/styles/MyChips.css */
+
+.my-chips-container {
+  padding: 1rem;
+  color: #333;
+}
+
+.my-chips-container h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  color: #2d2d2d;
+}
+
+.chips-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.chip-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chip-card:hover {
+  transform: translateY(-3px);
+}
+
+.chip-info h4 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.chip-info p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .my-chips-container {
+    padding: 0.5rem;
+  }
+
+  .chip-card {
+    padding: 0.8rem;
+  }
+
+  .chip-info h4 {
+    font-size: 1rem;
+  }
+
+  .chip-info p {
+    font-size: 0.85rem;
+  }
+}

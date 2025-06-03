@@ -1,0 +1,89 @@
+/* src/styles/MyWorkers.css */
+
+.my-workers-container {
+  padding: 1rem;
+  color: #333;
+}
+
+.my-workers-container h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  color: #2d2d2d;
+}
+
+.workers-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+/* CARD */
+.worker-card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  padding: 1rem;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.worker-card:hover {
+  transform: translateY(-3px);
+}
+
+/* FOTO */
+.worker-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #007bff;
+  margin-bottom: 0.75rem;
+}
+
+/* INFO */
+.worker-info h4 {
+  font-size: 1.1rem;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.worker-info p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+/* ERROR */
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* RESPONSIVE PARA MOBILE MÁS PEQUEÑOS */
+@media (max-width: 480px) {
+  .my-workers-container {
+    padding: 0.5rem;
+  }
+
+  .worker-card {
+    padding: 0.8rem;
+  }
+
+  .worker-photo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .worker-info h4 {
+    font-size: 1rem;
+  }
+
+  .worker-info p {
+    font-size: 0.85rem;
+  }
+}

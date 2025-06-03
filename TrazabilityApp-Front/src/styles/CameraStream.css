@@ -1,0 +1,28 @@
+/* src/styles/CameraStream.css */
+.camera-stream-container {
+    max-width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .camera-stream-container h2 {
+    margin-bottom: 15px;
+  }
+  
+  #camera-player {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border-radius: 8px;
+    background-color: #000;
+  }
+  
+  @media (max-width: 600px) {
+    #camera-player {
+      height: 250px;
+    }
+  }
+  
